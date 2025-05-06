@@ -25,6 +25,8 @@ def test_model_score():
 
     # Get the latest model score
     latest_score = model_scores[-1]['score']
+    print(f"Latest score: {latest_score}")
+    print(f"Current score: {score}")
 
     # Compare the latest score with the current score
     assert score >= latest_score
